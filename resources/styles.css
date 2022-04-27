@@ -1,0 +1,74 @@
+html, header, section, figure {
+
+
+}
+
+body{
+  color: black;
+  background-color: #d1d1d1;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+
+.logo {
+  width: 50%;
+  text-align: left;
+}
+
+nav {
+
+  justify-content: center;
+  align-items: flex-end;
+  margin: 30px 0;
+
+}
+
+nav a {
+  padding: 0 12px;
+  text-decoration: none;
+  color: darkblue;
+  font-size: 18px;
+}
+
+
+.about {
+
+  display: flex;
+
+}
+
+.about p {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.side p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+
+@media only screen and (max-width: 1024px)  {
+  .about, header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .about img, figcaption, .logo img{
+    width: 100%;
+    font-size: 12px;
+
+  }
+}
